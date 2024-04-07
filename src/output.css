@@ -617,6 +617,10 @@ html {
   margin-bottom: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -649,6 +653,14 @@ html {
   flex-basis: 24rem;
 }
 
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-1\/3 {
+  flex-basis: 33.333333%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -661,6 +673,10 @@ html {
   align-content: flex-end;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -669,12 +685,28 @@ html {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .gap-x-3 {
@@ -702,6 +734,28 @@ html {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-x-24 {
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+}
+
+.gap-y-24 {
+  row-gap: 6rem;
+}
+
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .rounded-3xl {
@@ -756,6 +810,22 @@ html {
 
 .bg-\[url\(\'\.\/assets\/images\/wedding\.png\'\)\] {
   background-image: url('./assets/images/wedding.png');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/man\.jpg\'\)\] {
+  background-image: url('./assets/images/man.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/womman\.jpg\'\)\] {
+  background-image: url('./assets/images/womman.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/kids\.jpg\'\)\] {
+  background-image: url('./assets/images/kids.jpg');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/woman\.jpg\'\)\] {
+  background-image: url('./assets/images/woman.jpg');
 }
 
 .bg-cover {
@@ -835,12 +905,26 @@ html {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-black {
   font-weight: 900;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-black {
