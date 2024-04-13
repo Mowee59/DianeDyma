@@ -20,15 +20,17 @@
       Get 25% Off this summer Sale. Grab it fast!!<strong>15H:45M:25S</strong>
     </p>
     <div class="container mx-auto">
-      <header class="flex items-center justify-between py-4">
-        <ul class="flex gap-x-4">
+      <header
+        class="relative flex items-center justify-between px-6 py-4 pl-0 sm:px-0"
+      >
+        <ul class="hidden gap-x-4 sm:flex">
           <li>Man</li>
           <li>Woman</li>
           <li>Kids</li>
           <li>Cadeaux</li>
         </ul>
-        <span class="text-4xl font-black">Diane</span>
-        <ul class="flex gap-x-6 py-2 text-xl">
+        <span class="pl-6 text-4xl font-black sm:pl-0">Diane</span>
+        <ul class="hidden gap-x-6 py-2 text-xl sm:flex">
           <li>
             <i class="fa-solid fa-magnifying-glass"></i>
           </li>
@@ -39,9 +41,25 @@
             <i class="fa-solid fa-right-to-bracket"></i>
           </li>
         </ul>
+        <div id="menuButton" class="cursor-pointer px-4 py-2 sm:hidden">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+        <ul
+          id="menu"
+          class="absolute top-20 hidden w-full border-b *:my-2 *:px-6 *:py-2"
+        >
+          <li class="border-l-4 border-black bg-gray-100">accueil</li>
+          <li>Man</li>
+          <li>Woman</li>
+          <li>Kids</li>
+          <li>Rechercher</li>
+          <li>Panier</li>
+          <li>Connexion</li>
+        </ul>
       </header>
+      <!-- <section class="mb-28">
       <div
-        class="mb-28 flex h-96 flex-wrap content-end items-end rounded-3xl bg-[url('./assets/images/hero.jpg')] bg-cover bg-center p-6 text-white"
+        class=" flex h-96 flex-wrap content-end items-end rounded-3xl bg-[url('./assets/images/hero.jpg')] bg-cover bg-center p-6 text-white"
       >
         <div class="flex flex-auto flex-col gap-y-3">
           <h1 class="text-5xl font-medium">DIANE NATURE COLLECTION</h1>
@@ -56,7 +74,8 @@
           Buy now
         </button>
       </div>
-      <section class="mb-14 gap-4 text-center">
+    </section> -->
+      <!-- <section class="mb-14 gap-4 text-center">
         <h2 class="mb-6 text-4xl font-medium">NEW COLLECTION</h2>
         <p class="mb-6 text-sm text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit odit quibusda.
@@ -131,8 +150,8 @@
             <strong>$45</strong>
           </article>
         </div>
-      </section>
-      <section class="mb-32 flex flex-col items-center gap-y-8 text-center">
+      </section> -->
+      <!-- <section class="mb-32 flex flex-col items-center gap-y-8 text-center">
         <div
           class="h-72 w-full rounded-3xl bg-[url('./assets/images/wedding.png')] bg-cover bg-center"
         ></div>
@@ -146,9 +165,9 @@
         >
           See details
         </button>
-      </section>
+      </section> -->
       <!-- Section Cateogrie -->
-      <section class="flex justify-center gap-4 text-white">
+      <!-- <section class="flex justify-center gap-4 text-white">
         <div
           class="mb-32 flex h-96 basis-80 flex-col items-start justify-end gap-y-4 rounded-3xl bg-[url('./assets/images/man.jpg')] bg-cover bg-center p-6"
         >
@@ -179,8 +198,8 @@
             Voir plus
           </button>
         </div>
-      </section>
-      <footer class="mb-32 flex gap-x-24">
+      </section> -->
+      <!-- <footer class="mb-32 flex gap-x-24">
         <div class="flex basis-1/2 flex-col gap-y-4">
           <h2 class="text-4xl font-extrabold">Diane</h2>
           <p class="text-sm text-gray-400">
@@ -225,15 +244,24 @@
           <ul></ul>
           <ul></ul>
         </div>
-      </footer>
+      </footer> -->
     </div>
-    <div class="flex justify-between bg-black p-2 px-4 text-center text-white">
+    <!-- <div class="flex justify-between bg-black p-2 px-4 text-center text-white">
       <p>Copyright © United nations 2024</p>
       <ul class="flex gap-x-4">
         <li>Terms and conditions</li>
         <li>Legal stuff</li>
         <li>We are Hiring</li>
       </ul>
-    </div>
+    </div> -->
+
+    <script>
+      const menuButton = document.querySelector("#menuButton");
+      const menu = document.querySelector("#menu");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
