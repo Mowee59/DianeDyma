@@ -42,7 +42,8 @@
           </li>
         </ul>
         <div id="menuButton" class="cursor-pointer px-4 py-2 sm:hidden">
-          <i class="fa-solid fa-bars fa-xl"></i>
+          <i id="burgerIcon" class="fa-solid fa-bars fa-xl"></i>
+          <i id="crossIcon" class="fa-solid fa-xmark fa-xl !hidden"></i>
         </div>
         <ul
           id="menu"
@@ -258,9 +259,13 @@
     <script>
       const menuButton = document.querySelector("#menuButton");
       const menu = document.querySelector("#menu");
+      const burgerIcon = document.querySelector("#burgerIcon");
+      const crossIcon = document.querySelector("#crossIcon");
 
       menuButton.addEventListener("click", () => {
         menu.classList.toggle("hidden");
+        burgerIcon.classList.toggle("!hidden");
+        crossIcon.classList.toggle("!hidden");
       });
     </script>
   </body>
